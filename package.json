@@ -1,0 +1,25 @@
+{
+  "name": "chaitanya.xyz",
+  "version": "1.0.0",
+  "description": "Chaitanya Raut — personal portfolio",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "npm run build && python3 -m http.server 5173 --directory dist",
+    "preview": "python3 -m http.server 5173 --directory dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csr4422/Chaitanya.xyz.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/csr4422/Chaitanya.xyz/issues"
+  },
+  "homepage": "https://github.com/csr4422/Chaitanya.xyz#readme",
+  "private": true,
+  "dependencies": {
+    "gsap": "^3.15.1"
+  }
+}
