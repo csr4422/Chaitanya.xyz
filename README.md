@@ -19,11 +19,11 @@ Open http://localhost:5173. The dev command builds first; after editing source f
 npm run build
 ```
 
-Deploy the contents of `dist/` to any static host. All asset paths are relative, including the resume, so both GitHub Pages repository URLs and custom domains work. GSAP and ScrollTrigger are bundled locally; content and navigation also work without JavaScript. Reduced-motion preferences disable animations and smooth scrolling.
+The build outputs the static site to `dist/`. All asset paths are relative, including the resume. GSAP and ScrollTrigger are bundled locally; content and navigation also work without JavaScript. Reduced-motion preferences disable animations and smooth scrolling.
 
-## GitHub Pages
+## Deployment
 
-The included workflow builds and deploys on pushes to `main`, or can be run manually with **Actions → Deploy to GitHub Pages → Run workflow**. In **Settings → Pages → Build and deployment**, select **GitHub Actions**. If your deployment branch differs, update `.github/workflows/pages.yml`.
+Cloudflare Pages builds and deploys automatically through its GitHub repository connection. The build command is `npm run build` and the output directory is `dist/`.
 
 ## Edit
 
